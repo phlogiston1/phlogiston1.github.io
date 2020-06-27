@@ -1,0 +1,200 @@
+﻿html{
+    width:100%;
+    height:100%;
+}
+body{
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+#cal{
+    position:absolute;
+    top:60px;
+    left:0;
+    height:60%;
+    width:70%;
+    background-color:#dddddd;
+    font-size:0;
+}
+#cLabels{
+    width:100%;
+    height:10%;
+    background-color: #999999;
+    display:flex;
+    font-size:30px;
+    text-align:center;
+}
+.cLabel{
+    width:14.28%;
+    height:100%;
+    border-left:2px solid black;
+}
+.cButton{
+    width:14.28%;
+    height:18%;
+    border:1px solid black;
+    padding:0;
+    font-size:40px;
+    background-color:#dddddd;
+}
+    .cButton:hover {
+        background:#7f9fb6;
+    }
+.selectedBtn {
+    background: #67a4cf;
+    color: white;
+}
+    .selectedBtn:hover {
+        background: #67a4cf;
+    }
+.todayBtn {
+    border: 3px solid #67cf92;
+    box-shadow:inset 0 0 5px black;
+}
+.meetingBtn {
+    background: linear-gradient(to left, #67cf92 20%, #dddddd 0%);
+}
+.meetingBtn:hover {
+    background: linear-gradient(to left, #67cf92 20%, #7f9fb6 0%);
+}
+.specialEvent {
+    background: linear-gradient(to left, #7c67cf 20%, #dddddd 0%);
+}
+.specialEvent:hover {
+    background: linear-gradient(to left, #7c67cf 20%, #7f9fb6 0%);
+}
+.specialEvent.selectedBtn {
+        background: linear-gradient(to left, #7c67cf 20%, #67a4cf 0%);
+}
+.specialEvent.meetingBtn {
+    background: linear-gradient(to right,#67cf92, #67cf92 20%, #dddddd 20%, #dddddd 80%, #7c67cf 80%);
+}
+.specialEvent.meetingBtn:hover {
+    background: linear-gradient(to right,#67cf92, #67cf92 20%, #7f9fb6 20%, #7f9fb6 80%, #7c67cf 80%);
+}
+.specialEvent.meetingBtn.selectedBtn {
+    background: linear-gradient(to right,#67cf92, #67cf92 20%, #67a4cf 20%, #67a4cf 80%, #7c67cf 80%);
+}
+.hide {
+    display: none;
+}
+
+#startday{
+    opacity:0;
+    border:none;
+    padding:0;
+}
+#startday.sun{
+    width:0;
+}
+#startday.mon {
+    width: 14.28%;
+}
+#startday.tue {
+    width: 28.56%;
+}
+#startday.wed {
+    width: 42.84%;
+}
+#startday.thu {
+    width: 57.12%;
+}
+#startday.fri {
+    width: 71.4%;
+}
+#startday.sat {
+    width: 85.68%;
+}
+
+#calMenu {
+    width: 10%;
+    height: 60%;
+    background-color: #7f9fb6;
+    position:absolute;
+    left:70%;
+    top:60px;
+    font-weight:bold;
+}
+.colorBox{
+    width:30%;
+    height:30px;
+    margin-top:10px;
+}
+.colorBox#green {
+    background-color: #67cf92;
+}
+.colorBox#purple {
+    background-color: #7c67cf;
+}
+.arrow#up {
+    margin-top: 10px;
+    border-radius:3px 3px 0 0;
+}
+.arrow {
+    width: 60%;
+    border: none;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 0 0 3px 3px;
+    background-color: #dddddd;
+}
+.arrow:hover {
+    background-color: #7f9fb6;
+    box-shadow:inset 0 0 2px black;
+}
+#monthName, #year{
+    width:60%;
+    height:30px;
+    font-size:20px;
+    background-color:#dddddd;
+}
+
+#day{
+    width:80%;
+    bottom:5px;
+    position:absolute;
+    left:0;
+    top:60%;
+    margin-top:60px;
+    background-color:#999999;
+    border-radius:0 0 5px 5px;
+    overflow:scroll;
+}
+.header {
+    width:100%;
+    top:0;
+    border-top: 2px solid black;
+    font-size: 30px;
+    text-align: center;
+    background-color: #7c7c7c;
+    box-shadow:0 0 5px grey;
+    position:relative;
+}
+.eventDay {
+    right:0px;
+    width: 50px;
+    height: 28px;
+    top: 0px;
+    border-top: 2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #4d4d4d;
+    box-shadow: 0 0 5px grey;
+    position: absolute;
+    padding-top: 7px;
+}
+.content {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.text_box {
+    padding: 5px;
+}
+
+.event{
+    display:none;
+}

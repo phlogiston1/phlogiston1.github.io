@@ -1,0 +1,5 @@
+Color pallet:
+#67a4cf  103, 164, 207 blue1
+#7f9fb6  127, 159, 182 blue2
+#67cf92  103, 207, 146 green
+#7c67cf  124, 103, 207 purple

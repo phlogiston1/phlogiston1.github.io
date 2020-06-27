@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Troop 19 Calendar</title>
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="cal.css" />
+    <script src="cal.js">
+    </script>
+</head>
+<body>
+    <div id="menubar">
+        <!--<img src="#" class="menuButton"/>-->
+        <a href="../../index.html" class="menuButton"><span class="buttonText">Home</span></a>
+        <a href="../join/index.html" class="menuButton"><span class="buttonText">Join</span></a>
+        <a href="#" class="menuButton"><span class="buttonText">Button</span></a>
+    </div>
+    <div id="cal">
+        <div id="cLabels">
+            <div class="cLabel">SUN</div>
+            <div class="cLabel">MON</div>
+            <div class="cLabel">TUE</div>
+            <div class="cLabel">WED</div>
+            <div class="cLabel">THU</div>
+            <div class="cLabel">FRI</div>
+            <div class="cLabel">SAT</div>
+        </div>
+        <button id="startday" class="wed"></button>
+        <button class="cButton selectedBtn" id="1">1</button>
+        <button class="cButton" id="2">2</button>
+        <button class="cButton" id="3">3</button>
+        <button class="cButton" id="4">4</button>
+        <button class="cButton" id="5">5</button>
+        <button class="cButton" id="6">6</button>
+        <button class="cButton" id="7">7</button>
+        <button class="cButton" id="8">8</button>
+        <button class="cButton" id="9">9</button>
+        <button class="cButton" id="10">10</button>
+        <button class="cButton" id="11">11</button>
+        <button class="cButton" id="12">12</button>
+        <button class="cButton" id="13">13</button>
+        <button class="cButton" id="14">14</button>
+        <button class="cButton" id="15">15</button>
+        <button class="cButton" id="16">16</button>
+        <button class="cButton" id="17">17</button>
+        <button class="cButton" id="18">18</button>
+        <button class="cButton" id="19">19</button>
+        <button class="cButton" id="20">20</button>
+        <button class="cButton" id="21">21</button>
+        <button class="cButton" id="22">22</button>
+        <button class="cButton" id="23">23</button>
+        <button class="cButton" id="24">24</button>
+        <button class="cButton" id="25">25</button>
+        <button class="cButton" id="26">26</button>
+        <button class="cButton" id="27">27</button>
+        <button class="cButton" id="28">28</button>
+        <button class="cButton" id="29">29</button>
+        <button class="cButton" id="30">30</button>
+        <button class="cButton" id="31">31</button>
+    </div>
+    <div id="calMenu">
+        <center>
+            <div class="colorBox" id="green"></div>
+            Normal Meeting
+            <div class="colorBox" id="purple"></div>
+            Special Event
+            <button class="arrow" id="up" onclick="incrementMonth()">&#9650</button>
+            <div id="monthName">JAN</div>
+            <button class="arrow" onclick="decrementMonth()">&#9660</button>
+            <button class="arrow" id="up" onclick="incrementYear()">&#9650</button>
+            <div id="year">2019</div>
+            <button class="arrow" onclick="decrementYear()">&#9660</button>
+
+        </center>
+    </div>
+    <div id="list">
+
+    </div>
+    <div id="day">
+        <div class="todayEvent">
+            <div class="header">This is an Event Header</div>
+            <div class="content text_box">
+                this is the event content. i think it is good.
+                asdfasdfasdfa
+                adsfasdfadsfasdf
+                asdfasdfasdfasdfa this is the event content. i think it is good.
+                asdfasdfasdfa
+                adsfasdfadsfasdf
+                asdfasdfasdfasdfa this is the event content. i think it is good.
+                asdfasdfasdfa
+                adsfasdfadsfasdf
+                asdfasdfasdfasdfa this is the event content. i think it is good.
+                asdfasdfasdfa
+                adsfasdfadsfasdf
+                asdfasdfasdfasdfa this is the event content. i think it is good.
+                asdfasdfasdfa
+                adsfasdfadsfasdf
+                asdfasdfasdfasdfa
+            </div>
+        </div>
+        <div class="todayEvent">
+            <div class="header">Your browser doesn't support scripts.</div>
+            <div class="content text_box">
+                enable scripts, or get a new computer.
+            </div>
+        </div>
+    </div>
+    <div class="event 2019 m8 d9">
+        <div id="title">this is an event</div>
+        <div id="content">isn't it neat</div>
+    </div>
+    <div class="event 2019 m8 d16">
+        <div id="title">awesome birthday</div>
+        <div id="content">that's all u need to know.</div>
+    </div>
+    <div class="event 2019 m10 d12">
+        <div id="title">Block Island Bike Trip</div>
+        <div id="content"></div>
+    </div>
+</body>
+</html>

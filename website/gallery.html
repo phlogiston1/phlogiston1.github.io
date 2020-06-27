@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Our Robots - Operation P.E.A.C.C.E. Robotics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+			body {font-family: Arial, Helvetica, sans-serif;}
+			.popup-images {
+			  border-radius: 5px;
+			  cursor: pointer;
+			  transition: 0.3s;
+			}
+			.popup-images:hover {opacity: 0.7;}
+			/* The Modal (background) */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 100px; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+			}
+
+			/* Modal Content (image) */
+			.modal-content {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 700px;
+			}
+
+			/* Caption of Modal Image */
+			#caption {
+			  margin: auto;
+			  display: block;
+			  width: 80%;
+			  max-width: 700px;
+			  text-align: center;
+			  color: #ccc;
+			  padding: 10px 0;
+			  height: 150px;
+			}
+
+			/* Add Animation */
+			.modal-content, #caption {
+			  -webkit-animation-name: zoom;
+			  -webkit-animation-duration: 0.6s;
+			  animation-name: zoom;
+			  animation-duration: 0.6s;
+			}
+
+			@-webkit-keyframes zoom {
+			  from {-webkit-transform:scale(0)}
+			  to {-webkit-transform:scale(1)}
+			}
+
+			@keyframes zoom {
+			  from {transform:scale(0)}
+			  to {transform:scale(1)}
+			}
+
+			/* The Close Button */
+			#image-close {
+			  position: absolute;
+			  top: 15px;
+			  right: 35px;
+			  color: #f1f1f1;
+			  font-size: 40px;
+			  font-weight: bold;
+			  transition: 0.3s;
+			}
+
+			#image-close:hover,
+			#image-close:focus {
+			  color: #bbb;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			/* 100% Image Width on Smaller Screens */
+			@media only screen and (max-width: 700px){
+			  .modal-content {
+				width: 100%;
+			  }
+			}
+			</style>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html"><img src="images/logo.png" style="height:100%"/></a></div>
+                <a href="#menu">Menu</a>
+                <div id="myModal" class="modal">
+					<span id="image-close">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>something something something</p>
+						<h2>Gallery</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+        <section id="three" class="wrapper style2">
+            <div class="inner">
+                <header class="align-center">
+                    <p class="special">blah blah blah</p>
+                    <h2>Photos</h2>
+                </header>
+                <div class="gallery">
+                    <div>
+                        <div class="image fit">
+                            <img src="images/pic01.jpg" class="popup-images" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <img src="images/pic02.jpg" class="popup-images" alt="" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <img src="images/pic03.jpg" class="popup-images" alt="For Inspiration and Recognition of Science and Technology" />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="image fit">
+                            <img src="images/pic04.jpg" class="popup-images" alt="Figuring out our new Vision Cameras" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+            <script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				// Get the image and insert it inside the modal - use its "alt" text as a caption
+				var img = document.getElementsByClassName("popup-images");
+				var modalImg = document.getElementById("img01");
+				var captionText = document.getElementById("caption");
+				img[0].onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				img[1].onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				img[2].onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				img[3].onclick = function(){
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+				// Get the <span> element that closes the modal
+				var span = document.getElementById("image-close");
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+				  modal.style.display = "none";
+				  console.log("plzpring");
+				}
+				</script>
+
+	</body>
+</html>
